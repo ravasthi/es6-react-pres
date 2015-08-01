@@ -1,15 +1,17 @@
 body {
-  background-color: #B9090B;
-  color: #000;
-  font-family: Helvetica, sans-serif;
   margin: 0;
+  background-color: #B9090B;
+  color: #444;
+  font-family: Vito, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .movies-list {
   background-color: rgba(245,245,245,.9);
   width: 960px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 20px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -17,6 +19,7 @@ body {
 .movie-tile {
   width: 32%;
   margin-right: 2%;
+  margin-bottom: 20px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -49,7 +52,7 @@ body {
 }
 
 .movie-tile__title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: normal;
 }
 
@@ -63,13 +66,16 @@ body {
   font-size: .9em;
   position: absolute;
   bottom: 25px;
+  width: 45%;
+  text-align: center;
 }
 
 .app-header {
+  margin-bottom: 20px;
+  padding: 10px 20px;
   background-color: #000;
   color: #B9090B ;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 
 .app-header__inner {
@@ -80,6 +86,8 @@ body {
 .app-header__title {
   float:left;
   margin: 5px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .app-header__display-select {
@@ -91,7 +99,7 @@ body {
   border: 2px solid lightgray;
 }
 
-.app-header__display-select:focus, 
+.app-header__display-select:focus,
 .app-header__search:focus {
   outline: none;
   border-color: #7FDBFF;
@@ -146,5 +154,6 @@ body {
 }
 
 .app-header__term a {
+  margin-left: 10px;
   color: #fff;
 }

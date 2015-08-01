@@ -4,7 +4,10 @@ var RatingStars = require('./RatingStars');
 class MovieListLayout extends React.Component {
 
   render() {
-    var img = (this.props.Poster && this.props.Poster !== 'N/A') ? this.props.Poster : `public/img/fake${Math.floor(Math.random()*5) + 1}.jpg`
+    let img = (this.props.Poster && this.props.Poster !== 'N/A') ? this.props.Poster : `public/img/fake${Math.floor(Math.random()*5) + 1}.jpg`;
+
+    let fiveStarRating = this.props.imdbRating / 2;
+
     return (
       <div className="movie-row">
         <div className="movie-row__img-container">
@@ -18,8 +21,8 @@ class MovieListLayout extends React.Component {
           {this.props.Plot}
         </div>
         <RatingStars
-          max={10}
-          score={this.props.imdbRating}
+          max={5}
+          score={fiveStarRating}
         />
       </div>
     );
